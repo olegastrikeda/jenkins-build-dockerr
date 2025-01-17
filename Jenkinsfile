@@ -10,7 +10,7 @@ node{
      } 
      
      stage('Run image') {
-         docker.image('olegastrikeda/nginx').withRun('-p 80:80') { c ->
+         docker.image('olegastrikeda/nginx').withRun('-p 83:80') { c ->
 
          sh 'docker ps'
          
